@@ -9,35 +9,35 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Monika AvilaMárquez Souchon",
+    "title": "Monika AvilaMárquez",
     "section": "",
     "text": "Postdoctoral Researcher in Statistics\n    Ph.D. in Econometrics\n    University of Geneva\n    \n      \n        \n          \n        \n      \n      \n        \n          \n        \n      \n      \n        \n          \n        \n      \n      \n  \n    \n  \n\nCV\n    \n    \n      I am an econometrician and statistician working in causal inference for observational data with emphasis in settings with interference, and in the use of machine learning methods in panel data econometrics.  I also work on model selection for crossed-random effects models for experimental data. \n      I am a postdoctoral researcher in Statistics at the University of Geneva.\n      \n    \n    About my research"
   },
   {
     "objectID": "index.html#selected-research",
     "href": "index.html#selected-research",
-    "title": "Monika AvilaMárquez Souchon",
+    "title": "Monika AvilaMárquez",
     "section": "Selected Research",
     "text": "Selected Research\n\n  \n    Weak instrumental variables due to nonlinearities in panel data:\n    A Super Learner Control Function estimator\n  \n  \n   Working paper  · \n  arXiv:2504.03228  ·  2025\n\n  \n    Abstract\n    \n      I propose a control function estimator for panel data models with weak instruments due to\n      nonlinear first stages. The estimator combines a Super Learner ensemble for the first stage\n      with semiparametric efficiency theory, achieving √NT-consistency and Neyman orthogonality\n      in the presence of generated regressors. Monte Carlo simulations confirm finite-sample\n      performance across a range of DGPs.\n    \n  \n  \n    arXiv\n    Slides\n    EuroCIM 2026 poster\n    R package\n  \n\n\n\n  \n    Causal Identification under Interference: The Role of Treatment Assignment Independence\n  \n  \n  with Julius Owusu\n\n  \n   Working paper  · \n  arXiv:2604.22532  ·  2026\n  Submitted\n\n  \n    Abstract\n    \n      Empirical researchers routinely invoke the no-interference or  individualistic treatment response (ITR) assumption to identify causal effects in observational studies, despite concerns that interference across units may arise in many economic settings. This paper studies the causal content of standard ITR-based identification formulas when arbitrary interference is present. We show that, under restrictions on dependence between treatment assignments across units, conventional ITR-based identification formulas---including those underlying selection-on-observables, instrumental variables, regression discontinuity designs, and difference-in-differences---identify well-defined causal objects: types of  average direct effects (ADEs). These results do not require knowledge of the interference structure or specification of exposure mappings. We also propose a sensitivity analysis framework that quantifies the robustness of statistical inference to violations of treatment-assignment independence under arbitrary interference.\n    \n  \n  \n    arXiv\n     R package"
   },
   {
     "objectID": "index.html#fields",
     "href": "index.html#fields",
-    "title": "Monika AvilaMárquez Souchon",
+    "title": "Monika AvilaMárquez",
     "section": "Fields",
     "text": "Fields\n\n  Causal inference for observational data\n  Debiased/Orthogonal Machine learning\n  Panel data\n  Instrumental variables"
   },
   {
     "objectID": "index.html#education-positions",
     "href": "index.html#education-positions",
-    "title": "Monika AvilaMárquez Souchon",
+    "title": "Monika AvilaMárquez",
     "section": "Education & positions",
     "text": "Education & positions\n\n\n\n\n\n\n\n2022 – present\nPostdoctoral Researcher in Statistics, Methods and Data Analysis,University of Geneva\n\n\n2023 – 2025\nAssistant Professor in Econometrics, Econometrics Group, University of Bristol\n\n\n2016 – 2022\nPhD in Econometrics, University of Geneva"
   },
   {
     "objectID": "index.html#community",
     "href": "index.html#community",
-    "title": "Monika AvilaMárquez Souchon",
+    "title": "Monika AvilaMárquez",
     "section": "Community",
     "text": "Community\n\nFounding member, R-Ladies Geneva\nMentor, rOpenSci Champions Program 2026"
   },

@@ -8,11 +8,11 @@ toc: false
 <div class="hero-section">
 
   <div class="hero-photo-col">
-    <img src="assets/img/moi.jpeg" alt="Monika Avila Márquez Souchon">
+    <img src="assets/img/moi.jpeg" alt="Monika Avila Márquez">
   </div>
 
   <div class="hero-bio-col">
-    <h1 class="hero-name">Monika Avila<br>Márquez Souchon</h1>
+    <h1 class="hero-name">Monika Avila<br>Márquez</h1>
     <p class="hero-role">Postdoctoral Researcher in Statistics</p>
     <p class="hero-role">Ph.D. in Econometrics</p>
     <p class="hero-institution">University of Geneva</p>

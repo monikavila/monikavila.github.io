@@ -5,7 +5,7 @@ project:
     - "*.qmd"
 
 website:
-  title: "Monika Avila Márquez Souchon"
+  title: "Monika Avila Márquez"
   description: "Postdoctoral Researcher in Statistics, University of Geneva"
   favicon: assets/favicon.ico
   navbar:
