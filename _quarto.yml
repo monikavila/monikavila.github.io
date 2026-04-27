@@ -20,9 +20,9 @@ website:
       #   text: Blog
     right:
       - icon: github
-        href: https://github.com/monika-avila
+        href: https://github.com/monikavila
       - icon: mortarboard
-        href: https://scholar.google.com/
+        href: https://scholar.google.com/citations?user=Btd9DUMAAAAJ&hl=en
   page-footer:
     center: "Monika Avila Márquez · University of Geneva"
 
