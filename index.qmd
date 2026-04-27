@@ -93,7 +93,6 @@ toc: false
   <span class="dot dot-wp"></span> Working paper &nbsp;·&nbsp;
   <a href="https://arxiv.org/abs/2604.22532">arXiv:2604.22532</a> &nbsp;·&nbsp; 2026
   <div class="paper-status">Submitted</div></div>
-</div>
   <details>
     <summary>Abstract</summary>
     <p class="abstract-text">
