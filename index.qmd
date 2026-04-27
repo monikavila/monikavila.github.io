@@ -1,0 +1,137 @@
+---
+title: " "
+page-layout: full
+toc: false
+---
+
+```{=html}
+<div class="hero-section">
+
+  <div class="hero-photo-col">
+    <img src="assets/img/moi.jpeg" alt="Monika Avila Márquez Souchon">
+  </div>
+
+  <div class="hero-bio-col">
+    <h1 class="hero-name">Monika Avila<br>Márquez Souchon</h1>
+    <p class="hero-role">Postdoctoral Researcher in Statistics</p>
+    <p class="hero-role">Ph.D. in Econometrics</p>
+    <p class="hero-institution">University of Geneva</p>
+    <div class="hero-social">
+      <a href="https://linkedin.com" title="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+      </a>
+      <a href="https://github.com/monikavila" title="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+      </a>
+      <a href="https://scholar.google.com/citations?user=Btd9DUMAAAAJ&hl=en" title="Google Scholar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/>
+        </svg>
+      </a>
+      <a href="https://arxiv.org/search/econ?searchtype=author&query=Avila-Marquez,+M" title="arXiv">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M7.969 0C3.418.293.09 2.757 0 7.418c-.056 2.896 1.73 5.574 4.367 6.82L7.23 9.616c-1.173-.522-2.07-1.74-2.07-3.197 0-2.07 1.682-3.75 3.75-3.75h6.937L7.97 0zm8.386 2.668L13.49 7.29c1.174.523 2.07 1.74 2.07 3.197 0 2.07-1.68 3.75-3.75 3.75H4.875L12.03 24c4.55-.293 7.879-2.757 7.969-7.418.056-2.896-1.73-5.574-4.367-6.82l2.862-5.622-2.109-1.472z"/>
+  </svg>
+</a>
+<a href="assets/CV.pdf" title="CV">CV</a>
+    </div>
+    <p class="hero-bio">
+      I am an econometrician and statistician working in causal inference for observational data with emphasis in settings with interference, and in the use of machine learning methods in panel data econometrics.  I also work on model selection for crossed-random effects models for experimental data. 
+      I am a postdoctoral researcher in Statistics at the University of Geneva.
+      
+    </p>
+    <a href="research.qmd" class="hero-btn">About my research</a>
+  </div>
+
+</div>
+
+<div class="page-content">
+```
+
+## Selected Research
+
+```{=html}
+<div class="paper-card">
+  <div class="paper-title">
+    Weak instrumental variables due to nonlinearities in panel data:
+    A Super Learner Control Function estimator
+  </div>
+  <div class="paper-meta">
+  <span class="dot dot-wp"></span> Working paper &nbsp;·&nbsp;
+  <a href="https://arxiv.org/abs/2504.03228">arXiv:2504.03228</a> &nbsp;·&nbsp; 2025
+</div>
+  <details>
+    <summary>Abstract</summary>
+    <p class="abstract-text">
+      I propose a control function estimator for panel data models with weak instruments due to
+      nonlinear first stages. The estimator combines a Super Learner ensemble for the first stage
+      with semiparametric efficiency theory, achieving √NT-consistency and Neyman orthogonality
+      in the presence of generated regressors. Monte Carlo simulations confirm finite-sample
+      performance across a range of DGPs.
+    </p>
+  </details>
+  <div class="paper-links">
+    <a href="https://arxiv.org/abs/2504.03228" class="pill pill-arxiv">arXiv</a>
+    <a href="assets/Slides_MonikaAvilaMarquez.pdf" class="pill">Slides</a>
+    <a href="assets/EuroCim2026poster.pdf" class="pill">EuroCIM 2026 poster</a>
+    <a href="mailto:monika.avila@unige.ch?subject=Request%3A%20SLCFE%20R%20package&body=Dear%20Monika%2C%0A%0AI%20am%20interested%20in%20accessing%20your%20SLCFE%20R%20package.%0A%0ABest%20regards%2C" class="pill">R package</a>
+  </div>
+</div>
+
+<div class="paper-card">
+  <div class="paper-title">
+    Causal Identification under Interference: The Role of Treatment Assignment Independence
+  </div>
+  <div class="paper-coauthor">
+  with <a href="https://www.juliusowusu.ca">Julius Owusu</a>
+</div>
+  <div class="paper-meta">
+  <span class="dot dot-wp"></span> Working paper &nbsp;·&nbsp;
+  <a href="https://arxiv.org/abs/2604.22532">arXiv:2604.22532</a> &nbsp;·&nbsp; 2026
+  <div class="paper-status">Submitted</div></div>
+</div>
+  <details>
+    <summary>Abstract</summary>
+    <p class="abstract-text">
+      Empirical researchers routinely invoke the no-interference or  <em>individualistic treatment response</em> (ITR) assumption to identify causal effects in observational studies, despite concerns that interference across units may arise in many economic settings. This paper studies the causal content of standard ITR-based identification formulas when arbitrary interference is present. We show that, under restrictions on dependence between treatment assignments across units, conventional ITR-based identification formulas---including those underlying selection-on-observables, instrumental variables, regression discontinuity designs, and difference-in-differences---identify well-defined causal objects: types of  <em>average direct effects</em> (ADEs). These results do not require knowledge of the interference structure or specification of exposure mappings. We also propose a sensitivity analysis framework that quantifies the robustness of statistical inference to violations of treatment-assignment independence under arbitrary interference.
+    </p>
+  </details>
+  <div class="paper-links">
+    <a href="https://arxiv.org/abs/2604.22532" class="pill pill-arxiv">arXiv</a>
+     <a href="mailto:monika.avila@unige.ch?subject=Request%3A%20CAI%20R%20package&body=Dear%20Monika%2C%0A%0AI%20am%20interested%20in%20accessing%20your%20CAI%20R%20package.%0A%0ABest%20regards%2C" class="pill">R package</a>
+  </div>
+</div>
+```
+
+## Fields
+
+```{=html}
+<div class="fields-row">
+  <span class="field">Causal inference for observational data</span>
+  <span class="field">Debiased/Orthogonal Machine learning</span>
+  <span class="field">Panel data</span>
+  <span class="field">Instrumental variables</span>
+</div>
+```
+
+## Education & positions
+
+| | |
+|---|---|
+| 2022 – present | **Postdoctoral Researcher in Statistics**,    Methods and Data Analysis,University of Geneva |
+| 2023 – 2025 | **Assistant Professor in Econometrics**, Econometrics Group, University of Bristol |
+| 2016 – 2022 | **PhD in Econometrics**, University of Geneva |
+
+## Community
+
+- Founding member, **R-Ladies Geneva**
+- Mentor, **rOpenSci Champions Program 2026**
+<!-- - Blog: **[Monika Metrics](https://monikametrics.com)** — statistics, methods & applied econometrics -->
+
+```{=html}
+</div>
+```

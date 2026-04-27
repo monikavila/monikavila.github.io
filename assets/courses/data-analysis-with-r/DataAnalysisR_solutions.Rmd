@@ -1,0 +1,354 @@
+---
+title: "Data Analysis with R"
+author: "Monika Avila Marquez, Ph.D."
+date: "2024-02-25"
+output: html_document
+---
+
+In this lab, you will learn how to use the package tidyverse for data anlysis as well as alternative methods without use of this package.
+
+Note: When you execute code within the notebook, the results appear beneath the code. Execute chunks of code by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*.
+
+# Step 1. UPLOAD LIBRARIES
+
+The first step is to upload the libraries that you will use. If the library has never been installed, you need to use install.packages() command.
+
+```{r}
+#install.packages("tidyverse")
+#install.packages("mice")
+#install.packages("finalfit")
+#install.packages('naniar')
+
+library(mice)
+library(tidyverse)
+library(ggplot2)
+library(finalfit)
+library(naniar)
+```
+
+# Step 2. CHANGE WORKING DIRECTORY
+
+```{r}
+getwd()
+setwd("/Users/moka/Dropbox/0.POST-PHD/GOALS/2.CODE/R/Data Analysis with R")
+```
+
+# Step 3. UPLOAD DATSET
+
+```{r}
+# Upload data 
+  # Using tidyverse package
+  df_tidy<-read_csv("Data/raw_data.csv")
+  # Check data set
+  glimpse(df_tidy)
+
+  # Alternative method without using tidyverse package
+  df<-read.csv("Data/raw_data.csv")
+
+  # Check if data was correctly uploaded
+  head(df) 
+```
+
+# Step 4. DATA PRE-ANALYSIS AND PRE-PROCESSING
+
+We will use the a dataset provided by Verónica Amarante, Marco Manacorda, Edward Miguel and Andrea Vigorito in the replication materials of the paper "Do Cash Transfers Improve Birth Outcomes? Evidence from Matched Vital Statistics, Program and Social Security Data" published American Economic Journal: Economic Policy in 2016.
+
+## 4.1 Keep only variables of interest
+
+```{r}
+
+# Using tidyverse package
+df_subset_tidy<-select(df,"cedulam","year","bajo2500","peso","apgar1","apgar2","semgest","premature","mpeso_areares","totcons","semprim","prim","seg","ter","mpeso","public","medico","numemban","outofwedlock","missinfof","motherworks.1","ing_alljobs9","ing_tot_hh9","ing_alljobs_hh9","edadm","edadp","motherworks.1","ing_ben_hh9","ever_ing_ciud_hh","ing_ciud_txu_hh9","ing_tarjeta_hh9","ing_ben_hh9.1")
+  # Check if data was correctly uploaded
+  head(df_subset_tidy) 
+
+# Alternative method without using tidyverse package
+  df_subset<-df[,c("cedulam","year","bajo2500","peso","apgar1","apgar2","semgest","premature","mpeso_areares","totcons","semprim","prim","seg","ter","mpeso","public","medico","numemban","outofwedlock","missinfof","motherworks.1","ing_alljobs9","ing_tot_hh9","ing_alljobs_hh9","edadm","edadp","motherworks.1","ing_ben_hh9","ever_ing_ciud_hh","ing_ciud_txu_hh9","ing_tarjeta_hh9","ing_ben_hh9.1")]
+  # Check if data was correctly uploaded
+  head(df_subset) 
+
+  # Another way of subsetting the data 
+
+  vbles_interest<-c("cedulam","year","bajo2500","peso","apgar1","apgar2","semgest","premature","mpeso_areares","totcons","semprim","prim","seg","ter","mpeso","public","medico","numemban","outofwedlock","missinfof","motherworks.1","ing_alljobs9","ing_tot_hh9","ing_alljobs_hh9","edadm","edadp","motherworks.1","ing_ben_hh9","ever_ing_ciud_hh","ing_ciud_txu_hh9","ing_tarjeta_hh9","ing_ben_hh9.1")
+  
+  df_subset2<-df[,vbles_interest]
+
+  # Check if data was correctly uploaded
+  head(df_subset2) 
+```
+
+You can find another data manupalation examples in the following link:<https://tavareshugo.github.io/r-intro-tidyverse-gapminder/04-manipulate_variables_dplyr/index.html>
+
+## 4.2 Verify that variables have the correct type
+
+```{r}
+
+head(df_subset)
+
+```
+
+## 4.3 Look for missing values
+
+Missing values are represented by NA.
+
+Important:
+
+-   NA is not the same as NaN! NaN means that it is not a number.
+-   Inf means that it is undefined (ex. 1/0) or infinity.
+
+Useful package to deal with missing values are mice, tidyverse, naniar.
+
+### 4.3.1. Percentage of ALL data frame values that are missing
+
+```{r}
+pct_miss(df_subset)
+```
+
+### 4.3.2. Percentage of complete cases
+
+```{r}
+pct_complete_case(df_subset)
+```
+
+### 4.3.3. Percentage of rows with any missing value
+
+```{r}
+pct_miss_case(df_subset)
+```
+
+### 4.3.4. Determine if the variable mpeso_areare has missing values.
+
+```{r}
+
+head(is.na(df_subset$mpeso_areare))
+
+```
+
+### 4.3.5. Finding the number of missing values for the variable mpeso_areare.
+
+```{r}
+# Using tidyverse packages
+df_subset %>%
+  summarise(count = sum(is.na(df_subset$mpeso_areares)))
+```
+
+### 4.3.6. Get a plot with missing values frequencies for each variable
+
+```{r}
+gg_miss_var(df_subset)
+```
+
+### 4.3.7. Missing patterns per variable and year
+
+```{r}
+gg_miss_fct(df_subset,year)
+```
+
+### 4.3.8. See the pattern of the missing values.
+
+a)  Missing observations per variable
+
+```{r}
+df_subset %>%
+  missing_plot()
+
+```
+
+### 4.3.9. Solutions if missing values is at random
+
+IMPORTANT: ALWAYS REPORT HOW YOU HANDLE MISSING VALUES.
+
+a)  Do not consider missing values in the estimation
+
+```{r}
+    mean(df_subset$mpeso_areares)
+```
+
+    Nop! we did not mean that.  We cannot just ignore missing values in R as you need to specify this.  
+
+    We meant eliminating missing values.  The problem is that we might end up with a very small sample.
+
+```{r}
+  mean(df_subset$mpeso_areares,na.rm=T)
+```
+
+Not equivalent to dropping missing values. As you can see in the next point, we obtain a different mean when we drop values. Why?
+
+b)  Listwise deletion (Drop missing values, and keep only completed cases): this is only valid when data is missing completely at random (MCAR). MCAR means that the probability of missingness is independent of the variable of interest and the rest of observed variables. MCAR causes large standard errors but not bias. If missingnes is not at random, then deletion introduces biases as the data is not longer representative of the population (if the original sample was a representative sample of the population of interest).
+
+```{r}
+# Use tidyverse package to drop missing values
+df_subset_nona_tv<-df_subset %>% drop_na()
+
+# Alternative way of dropping missing values
+  df_subset_nona<-na.omit(df_subset)
+```
+
+```{r}
+  mean(df_subset_nona$mpeso_areares)
+
+  mean(df_subset_nona_tv$mpeso_areares)
+```
+
+c.  Impute missing values: valid if data is missing at random (MAR) since the probability of missigness depends on the other observed variable.
+
+Impute with the mean of the variable
+
+```{r}
+  imputed <- df_subset %>%
+  mutate(mpeso_areares = replace_na(mpeso_areares, mean(mpeso_areares, na.rm = T)))
+
+  head(imputed$mpeso_areares)
+```
+
+Note: there different types of imputation methods: multivariate, regression based, etc. We only see one due to scope of course.
+
+## 4.4 Look for outliers
+
+Detection of outliers: use graphical analysis, or use other diagnostics (out of the scope of the course)
+
+Reasons of outliers:
+
+-   Errors: human, measurement, data processing, sampling. In this situation one can throw away the value.
+-   Extreme value or novelty: legitimate outlier, do not it throw away!!!
+
+### 4.4.1 Graphical analysis
+
+#### 1. Unidimensional analysis:
+
+    See if the variable birthweight has outliers using descriptive statistics, plotting the empirical distribution, a boxplot.
+
+```{r}
+# Quantiles, maximum, minimum
+summary(df_subset$peso)
+quantile(df_subset_nona$peso, c(.25, .5, .75, .95))
+
+# Histogram
+hist(df_subset$peso)
+
+# Density 
+d<-density(df_subset_nona$peso)
+plot(d)
+
+
+
+```
+
+```{r}
+# Simplest way of graphing a boxplot
+boxplot(df_subset$peso)
+
+```
+
+We observe an outlier, a newborn with weight 8kg! It is very likely that this value is an error. We can use a bivariate analysis to gather more evidence on the reason of the outlier.
+
+#### 2. Bivariate analysis:
+
+    We can see if the variable birthweight has outliers in terms of the variability of the gestational term. If we find that the 8kg newborn was born with a gestational term of 26 weeks, then it is evidence that it is a mistake and that the value is not credible.
+
+```{r}
+# Simplest way of graphing a boxplot
+plot(df_subset$semgest,df_subset$peso)
+# Using ggplot2 library
+```
+
+There are other methods to identify outliers but it is more advanced and out os the scope of this course.
+
+#### 3. Solutions for legitimate outliers
+
+a)  Robust estimation (out of the scope of the course)
+
+b)  Using other weights (out of the scope of the course)
+
+# Step 5. Exploratory Analysis
+
+## 5.1 Summary statistics
+
+```{r}
+summary(df_subset)
+```
+
+## 5.1 Summary statistics by group
+
+```{r}
+df_subset_nona %>%
+  group_by(motherworks.1) %>% 
+  summarize(mean = mean(peso),
+            std = sd(peso))
+```
+
+# Step 6. Modelling
+
+## 6.1 Linear regression
+
+```{r}
+linear_model<-lm(df_subset$peso~df_subset$semgest+df_subset$motherworks.1+df_subset$motherworks.1*df_subset$semgest)
+summary(linear_model)
+```
+
+## 6.2 Polynomial regression
+
+```{r}
+quadratic_model<-lm(df_subset_nona$peso~poly(df_subset_nona$semgest,2)*df_subset_nona$motherworks.1)
+summary(quadratic_model)
+```
+
+# Step 7. Model evaluation
+
+## 7.1 Plot residuals
+
+```{r}
+#get list of residuals 
+res <- resid(linear_model)
+plot(fitted(linear_model), res)
+abline(0,0)
+
+```
+
+```{r}
+#get list of residuals 
+res2 <- resid(quadratic_model)
+plot(fitted(quadratic_model), res2)
+abline(0,0)
+
+```
+
+```{r}
+
+#create Q-Q plot for residuals
+qqnorm(res)
+
+#add a straight diagonal line to the plot
+qqline(res)
+```
+
+```{r}
+
+#create Q-Q plot for residuals
+qqnorm(res2)
+
+#add a straight diagonal line to the plot
+qqline(res2)
+```
+
+```{r}
+#Create density plot of residuals
+plot(density(res))
+```
+
+```{r}
+#Create density plot of residuals
+plot(density(res2))
+```
+
+# REFERENCES
+
+1.  Amarante, V., Manacorda, M., Miguel, E., & Vigorito, A. (2016). Do cash transfers improve birth outcomes? Evidence from matched vital statistics, and program and social security data. American Economic Journal: Economic Policy, 8(2), 1-43.
+
+2.  More information on manipulating variables with tidyverse: <https://tavareshugo.github.io/r-intro-tidyverse-gapminder/04-manipulate_variables_dplyr/index.html>
+
+3.  <https://epirhandbook.com/en/missing-data.html>
+
+4.  <https://cran.r-project.org/web/packages/naniar/vignettes/naniar-visualisation.html>
+
+5.  <https://thedocs.worldbank.org/en/doc/20f02031de132cc3d76b91b5ed8737d0-0050012017/related/lecture-12-1.pdf>

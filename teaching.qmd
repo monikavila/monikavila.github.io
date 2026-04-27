@@ -1,0 +1,43 @@
+---
+title: "Teaching"
+toc: false
+---
+
+
+```{=html}
+<div class="course-card">
+  <div class="course-title">
+Introduction to R (In Spanish)</div>
+  <div class="course-meta"> Ecomienza: Econthaki and BOWEN &nbsp;·&nbsp; 2023</div>
+  <div class="course-links">
+    <a href="https://github.com/monikavila/Curso-Introduccion-R" class="pill">Github</a>    
+  </div>
+</div>
+```
+
+```{=html}
+<div class="course-card">
+  <div class="course-title">
+Data analysis with R</div>
+  <div class="course-meta"> School of Economics,University of Bristol &nbsp;·&nbsp; 2023</div>
+  <div class="course-links">
+    <a href="assets/courses/data-analysis-with-r/Data_Analysis_Course.pdf" class="pill">Slides</a>    
+    <a href="assets/courses/data-analysis-with-r/Data_AnalysisR.R" class="pill">Lab</a>    
+    <a href="assets/courses/data-analysis-with-r/Data_AnalysisR_solutions.R" class="pill">Lab Solutions</a>    
+    <a href="https://github.com/monikavila/Data-Analysis-with-R/tree/main" class="pill">Github</a>    
+  </div>
+</div>
+```
+
+
+```{=html}
+<div class="course-card">
+  <div class="course-title">
+Computer Labs Econometrics 2 Economics and Finance</div>
+  <div class="course-meta"> School of Economics,University of Bristol &nbsp;·&nbsp; 2023</div>
+  <div class="course-links">
+    <a href="assets/courses/Stata/Lab2.pdf" class="pill">Lab 2</a>    
+    <a href="assets/courses/Stata/Lab3.pdf" class="pill">Lab 3</a>        
+  </div>
+</div>
+```

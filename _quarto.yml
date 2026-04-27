@@ -1,0 +1,34 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "*.qmd"
+
+website:
+  title: "Monika Avila Márquez Souchon"
+  description: "Postdoctoral Researcher in Statistics, University of Geneva"
+  favicon: assets/favicon.ico
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: teaching.qmd
+        text: Teaching
+      # - href: https://monikametrics.com
+      #   text: Blog
+    right:
+      - icon: github
+        href: https://github.com/monika-avila
+      - icon: mortarboard
+        href: https://scholar.google.com/
+  page-footer:
+    center: "Monika Avila Márquez · University of Geneva"
+
+format:
+  html:
+    theme: flatly
+    css: assets/custom.css
+    toc: false
+    mainfont: "Georgia, Times New Roman, serif"
