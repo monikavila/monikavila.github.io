@@ -13,7 +13,7 @@ toc: false
 
   <div class="hero-bio-col">
     <h1 class="hero-name">Monika Avila<br>Márquez</h1>
-    <p class="hero-role">Postdoctoral Researcher in Statistics</p>
+    <p class="hero-role">Postdoctoral Researcher </p>
     <p class="hero-role">Ph.D. in Econometrics</p>
     <p class="hero-institution">University of Geneva</p>
     <div class="hero-social">
@@ -41,7 +41,7 @@ toc: false
     </div>
     <p class="hero-bio">
       I am an econometrician and statistician working in causal inference for observational data with emphasis in settings with interference, and in the use of machine learning methods in panel data econometrics.  I also work on model selection for crossed-random effects models for experimental data. 
-      I am a postdoctoral researcher in Statistics at the University of Geneva.
+      I am a postdoctoral researcher in Impact Performace Metrics and Causal Inference for Panel Data at the Geneva Finance Research Intitute, University of Geneva.
       
     </p>
     <a href="research.qmd" class="hero-btn">About my research</a>
@@ -151,7 +151,8 @@ Models with Individual Fixed Effects
 
 | | |
 |---|---|
-| 2022 – present | **Postdoctoral Researcher in Statistics**,    Methods and Data Analysis,University of Geneva |
+| 2026 – preseny | **Postdoctoral Researcher**, Geneva Finance Research Institute, University of Geneva |
+| 2022 – 2026 | **Postdoctoral Researcher in Statistics**,    Methods and Data Analysis, University of Geneva |
 | 2023 – 2025 | **Assistant Professor in Econometrics**, Econometrics Group, University of Bristol |
 | 2016 – 2022 | **PhD in Econometrics**, University of Geneva |
 
