@@ -9,7 +9,7 @@ toc: false
 <div class="paper-card">
   <div class="paper-title">
     Weak instrumental variables due to nonlinearities in panel data:
-    A Super Learner Control Function estimator
+    An Orthogonal Super Learner Control Function estimator
   </div>
   <div class="paper-meta">
     <span class="dot dot-wp"></span>
@@ -20,17 +20,15 @@ toc: false
     <p class="abstract-text">
       I propose a control function estimator for panel data models with weak instruments arising
       from nonlinear first stages. The estimator uses a Super Learner ensemble to approximate the
-      optimal first stage, then inserts estimated control functions into a partially linear second
-      stage. I establish √NT-consistency, Neyman orthogonality with respect to first-stage
+      optimal first stage, then inserts estimated control functions into a linear main
+      equation. I establish √NT-consistency, Neyman orthogonality with respect to first-stage
       nuisance, and inference validity under the generated regressors problem (Pagan 1984,
       Murphy & Topel 1985). Monte Carlo simulations across varied DGPs confirm the estimator's
       robustness to library misspecification and overfitting.
     </p>
   </details>
  <div class="paper-links">
-    <a href="https://arxiv.org/abs/2504.03228" class="pill pill-arxiv">arXiv</a>
-    <a href="assets/Slides_MonikaAvilaMarquez.pdf" class="pill">Slides</a>
-    <a href="assets/EuroCim2026poster.pdf" class="pill">EuroCIM 2026 poster</a>
+    <a href="assets/main_corrected _shorter.pdf" class="pill pill-arxiv">JMP</a>
     <a href="mailto:monika.avila@unige.ch?subject=Request%3A%20SLCFE%20R%20package&body=Dear%20Monika%2C%0A%0AI%20am%20interested%20in%20accessing%20your%20SLCFE%20R%20package.%0A%0ABest%20regards%2C" class="pill">R package</a>
   </div>
 </div>
