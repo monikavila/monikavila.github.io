@@ -58,11 +58,11 @@ toc: false
 <div class="paper-card">
   <div class="paper-title">
     Weak instrumental variables due to nonlinearities in panel data:
-    A Super Learner Control Function estimator
+    An Orthogonal Super Learner Control Function estimator
   </div>
   <div class="paper-meta">
   <span class="dot dot-wp"></span> Working paper &nbsp;·&nbsp;
-  <a href="https://arxiv.org/abs/2504.03228">arXiv:2504.03228</a> &nbsp;·&nbsp; 2025
+  <a href="assets/main_corrected _shorter"></a> &nbsp;·&nbsp; 2025
 </div>
   <details>
     <summary>Abstract</summary>
@@ -75,7 +75,7 @@ toc: false
     </p>
   </details>
   <div class="paper-links">
-    <a href="https://arxiv.org/abs/2504.03228" class="pill pill-arxiv">arXiv</a>
+    <a href="assets/main_corrected _shorter.pdf" class="pill pill-arxiv">JMP</a>
     <a href="assets/Slides_MonikaAvilaMarquez.pdf" class="pill">Slides</a>
     <a href="assets/EuroCim2026poster.pdf" class="pill">EuroCIM 2026 poster</a>
     <a href="mailto:monika.avila@unige.ch?subject=Request%3A%20SLCFE%20R%20package&body=Dear%20Monika%2C%0A%0AI%20am%20interested%20in%20accessing%20your%20SLCFE%20R%20package.%0A%0ABest%20regards%2C" class="pill">R package</a>
