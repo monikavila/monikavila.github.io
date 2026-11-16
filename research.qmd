@@ -13,7 +13,7 @@ toc: false
   </div>
   <div class="paper-meta">
     <span class="dot dot-wp"></span>
-    Working paper &nbsp;·&nbsp; arXiv:2504.03228 &nbsp;·&nbsp; 2025
+    Working paper &nbsp;·&nbsp;  &nbsp;·&nbsp; 2025
   </div>
   <details>
     <summary>Abstract</summary>
