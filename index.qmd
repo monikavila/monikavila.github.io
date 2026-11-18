@@ -75,7 +75,7 @@ toc: false
     </p>
   </details>
   <div class="paper-links">
-    <a href="assets/main_corrected _shorter.pdf" class="pill pill-arxiv">JMP</a>
+    <a href="assets/main.pdf" class="pill pill-arxiv">JMP</a>
     <a href="mailto:monika.avila@unige.ch?subject=Request%3A%20SLCFE%20R%20package&body=Dear%20Monika%2C%0A%0AI%20am%20interested%20in%20accessing%20your%20SLCFE%20R%20package.%0A%0ABest%20regards%2C" class="pill">R package</a>
   </div>
 </div>
