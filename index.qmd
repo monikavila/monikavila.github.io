@@ -67,15 +67,11 @@ toc: false
   <details>
     <summary>Abstract</summary>
     <p class="abstract-text">
-      I propose a control function estimator for panel data models with weak instruments due to
-      nonlinear first stages. The estimator combines a Super Learner ensemble for the first stage
-      with semiparametric efficiency theory, achieving √NT-consistency and Neyman orthogonality
-      in the presence of generated regressors. Monte Carlo simulations confirm finite-sample
-      performance across a range of DGPs.
+   A triangular structural panel data model with additively separable individual-specific effects is used to model the causal effect of a covariate on an outcome variable when there are unobservable confounders with some of them time-invariant. In this setup, a linear specification for the reduced-form equation might be problematic when the conditional mean of the endogenous covariate and the instrumental variables is nonlinear in the population. The reason is that ignoring the nonlinearity could lead to weak instruments (instruments are weakly correlated with the endogenous covariate) due to misspecification as shown using a generalized concentration parameter for panel data. As a solution, we propose a triangular simultaneous equation model for panel data with additive separable individual-specific fixed effects composed of a linear structural equation with a nonlinear reduced form equation. The parameter of interest is the structural parameter of the endogenous variable. The identification of this parameter is obtained under the assumption of available exclusion restrictions and using a control function approach. We derive a Neyman orthogonal score, and we provide an estimator that we call Orthogonal Super Learner Control Function (Orthogonal SLCF) estimator. The estimation procedure is composed of two main steps and cross-fitting. First, we estimate the control function using a super learner. In the following step, we use the estimated control function to control for endogeneity in the structural equation. Cross-fitting is done across the individual dimension. The estimator is consistent and asymptotically normal achieving a parametric rate of convergence. We show that the Orthogonal SLCF estimator is equivalent to the plug-in IV estimator but not equivalent to the naive plug-in 2SLS estimator which is not root-NT consistent.
     </p>
   </details>
   <div class="paper-links">
-    <a href="assets/main.pdf" class="pill pill-arxiv">JMP</a>
+    <a href="https://arxiv.org/abs/2504.03228"> arXiv:2504.03228 </a> &nbsp;·&nbsp; 2026
     <a href="mailto:monika.avila@unige.ch?subject=Request%3A%20SLCFE%20R%20package&body=Dear%20Monika%2C%0A%0AI%20am%20interested%20in%20accessing%20your%20SLCFE%20R%20package.%0A%0ABest%20regards%2C" class="pill">R package</a>
   </div>
 </div>
